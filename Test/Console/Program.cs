@@ -10,7 +10,7 @@ namespace SadConsole
         {
             Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
             Console.WriteLine("Hello World!");
-            using (MySqlConnection con = new MySqlConnection("Server=595cdf9db718a.gz.cdb.myqcloud.com;Port=14862;Database=nxpxcx;User ID=cdb_outerroot;Password=lo123yyf@yfd#win;Min Pool Size=10;SslMode=None;Max Pool Size=400;CharSet=utf8;Allow Zero Datetime=true;Allow User Variables=True;persist security info=true;"))
+            using (MySqlConnection con = new MySqlConnection(""))
             {
                 con.Open();
                 string sql = "select * from nxp_wxadmindetail where WxAdId=72";
